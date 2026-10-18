@@ -22,3 +22,8 @@ if isfolder(module_path_exp)
 end
 
 disp('Окружение готово.');
+module_path_sqr = fullfile(proj_root, 'libs', 'temp_sensor_square');
+if isfolder(module_path_sqr)
+    addpath(module_path_sqr);
+    disp('Путь к модулю square добавлен.');
+end
